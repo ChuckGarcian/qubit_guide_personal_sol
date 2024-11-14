@@ -59,8 +59,6 @@ $$P=\frac{1}{n^2}\frac{\sin^2 (n\frac{\psi}{2})}{\sin^2 (\frac{\psi}{2})}$$
 
 When the relative angle is zero we have $\psi = 0$, the probability is $P=1$ as shown below in the graph.
 
-$$P = $$
-
 ## Part C
 
 We can see the probability reaches zero at $\psi=\pi$
