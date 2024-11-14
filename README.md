@@ -1,4 +1,4 @@
+# qubit_guide_personal_sol
 
-# Ekert
+Personal solutions to https://qubit.guide/
 
-my solutions to the book by Artur Ekert
