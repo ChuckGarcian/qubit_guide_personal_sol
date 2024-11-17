@@ -1,6 +1,6 @@
 # Single qubit interference -- HPH
 
-![hph circuit](hph.png)
+![hph circuit](figs/hph.png)
 
 **Claim:** The above circuit can be represented as the product of three matrices $HPH$. We claim:
 
