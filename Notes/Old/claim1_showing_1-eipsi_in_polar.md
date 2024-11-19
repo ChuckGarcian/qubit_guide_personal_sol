@@ -41,6 +41,26 @@ So $r=2\cos\frac{\theta}{2}$.
 
 **Find** $\mathbf{\phi}:$
 
-$$z= r\cos\phi + rsin\phi$$
-$$z= r\cos\phi + rsin\phi$$
-$$\tan\phi = \frac{}{}$$
+$$\phi = \arctan(\frac{y}{x})\text{, } z = x + yi$$
+
+From $z = 1 + e^{i\theta}$:
+
+$$
+\begin{cases}
+x = 1 + \cos\theta \\
+y = \sin\theta
+\end{cases}
+$$
+
+Therefore:
+$$\phi = \arctan(\frac{\sin\theta}{1 + \cos\theta})$$
+
+Using the half-angle formula:
+
+$$\tan\frac{\theta}{2} = \frac{\sin\theta}{1 + \cos\theta}$$
+
+Therefore:
+$$\phi = \frac{\theta}{2}$$
+
+This completes our proof that 
+$$z = 1 + e^{i\theta} = 2\cos{\frac{\theta}{2}}e^{i\frac{\theta}{2}}$$

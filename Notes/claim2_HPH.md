@@ -71,7 +71,7 @@ $$
 \end{bmatrix}
 $$
 
-By claim [1], we can then covert to polar form:
+By claim [1] and [1.5];, we can then covert to polar form:
 
 $$
 e^{i\frac{\psi}{2}}
