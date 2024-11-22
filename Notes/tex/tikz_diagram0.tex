@@ -1,0 +1,28 @@
+\definecolor{primary}{RGB}{177,98,78}
+\tikzset{dot/.style={fill,shape=circle,minimum size=5pt,inner sep=0pt}}
+\newcommand{\ket}[1]{|#1\rangle}
+\begin{tikzpicture}[yscale=1.8]
+  \node (input0) at (0,1) {$\ket{0}$};
+  \node (input1) at (0,0) {$\ket{1}$};
+  \node (middle0) at (5,1) {$\ket{0}$};
+  \node (middle1) at (5,0) {$\ket{1}$};
+  \node (output0) at (10,1) {$\ket{0}$};
+  \node (output1) at (10,0) {$\ket{1}$};
+  \foreach \x in {1,4,6,9}
+    \foreach \y in {0,1}
+      \node [dot] (n\x\y) at (\x,\y) {};
+  \draw [thick] (input1) to (n10) to node [fill=white,pos=0.5] {$U_{11}$} (n40);
+  \draw [thick] (n60) to node [fill=white,pos=0.25] {$V_{01}$} (n91);
+  \draw [thick] (n10) to node [fill=white,pos=0.25] {$U_{01}$} (n41);
+  \draw [thick] (n61) to node [fill=white,pos=0.5] {$V_{00}$} (n91) to (output0);
+  \draw [ultra thick,primary] (input0) to node [fill=white,pos=0.5] {$U_{00}$} (middle0);
+  \draw [ultra thick,primary] (n40) to (middle1);
+  \draw [ultra thick,primary] (n11) to node [fill=white,pos=0.25] {$U_{10}$} (n40);
+  \draw [ultra thick,primary] (middle0) to (n61);
+  \draw [ultra thick,primary] (middle1) to node [fill=white,pos=0.5] {$V_{11}$} (output1);
+  \draw [ultra thick,primary] (n61) to node [fill=white,pos=0.25] {$V_{10}$} (n90);
+  \node [dot] at (n11) {};
+  \node [dot] at (n41) {};
+  \node [dot] at (n60) {};
+  \node [dot] at (n90) {};
+\end{tikzpicture} 

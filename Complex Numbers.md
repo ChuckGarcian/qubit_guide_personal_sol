@@ -1,0 +1,1 @@
+Feynman lecture 111.2 and 111.3 talk about complex numbers and relation to wave. 111.3 is primrarly in context of qc

@@ -2,6 +2,7 @@
 SRC_DIR := .
 BIN_DIR := compiled_pdfs
 PANDOC := pandoc
+HEADER := ./tex/header.tex
 
 # List all Markdown files in the source directory
 MD_FILES := $(wildcard $(SRC_DIR)/*.md)
@@ -18,7 +19,7 @@ $(BIN_DIR):
 
 # Rule to convert Markdown to PDF
 $(BIN_DIR)/%.pdf: $(SRC_DIR)/%.md | $(BIN_DIR)
-	$(PANDOC) $< -o $@
+	$(PANDOC) -H $(HEADER) $< -o $@
 
 # Clean target
 clean:
